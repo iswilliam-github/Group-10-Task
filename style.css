@@ -9,7 +9,10 @@
     background-color: rgb(95,87,154);
 }
 .header-ui-margin{
-    margin-left: 45rem;
+    margin-left: 30rem;
+}
+.padding-start{
+    padding-left: 8rem;
 }
 
 
