@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/* special bootstrap style  starts */
+.bg-purple{
+    background-color: rgb(95,87,154);
+}
+.header-ui-margin{
+    margin-left: 45rem;
+}
+
+
+
+
+
+
+/* special bootstrap style ends  */
+body{
+    background-color: rgb(95,87,154);
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    /* border: 2px solid red; */
+
+
+}
+
+main{
+  
+}
+
+.maincontainer{
+    display: flex;
+    background-image: url(Assets/Images/LadyHero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    /* border: yellow 2px solid; */
+}
+.heroimage{
+    width: 35%;
+
+}
+.heroimage img{
+    /* border: 2px solid red; */
+
+    height: 70vh;
+    width: 100%;
+    border-radius: 10px;
+}
+.herotext{
+    background-color: rgba(95, 87, 154, 0.699);
+    /* border: 2px solid red; */
+    margin: 200px 50px 50px 600px;
+    padding: 40px 50px;
+    width: 75%;
+    height: 55vh;
+    border-radius: 10px;
+}
+.getthrilled{
+    color: rgb(30,215,96);
+    font-stretch: 100%;
+    font-weight: 900;
+    text-align: start;
+    font-size: 75px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+.getthrilled2{
+    color: rgb(30,215,96);
+    font-stretch: 100%;
+    font-weight: 900;
+    text-align: start;
+    font-size: 75px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    margin-left: 155px;
+}
+.thousands{
+    color: rgb(30,215,96);
+    font-stretch: 100%;
+    font-weight: 600;
+    text-align: start;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    margin-left: 60px;
+}
+
+.btnthrilled{
+    color: rgb(42,154,168);
+    font-stretch: 100%;
+    font-weight: 600;
+    text-align: start;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 140px;
+    text-align: center;
+    background-color: rgb(30,215,96);
+}
+
+/* footer style start */
+footer{
+    background-color: rgb(95,87,154);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-left: 5rem;
+    height: 10vh;
+    /* border: 2px solid red; */
+
+
+}
+
+/* fonts starts */
+
+
+/* .inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+
+} */
+/* fonts ends  */
