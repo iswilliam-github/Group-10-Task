@@ -440,3 +440,51 @@ hr{
   
   
 /* fonts ends  */
+
+/* media query starts  */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media  screen and (max-width: 720px) {
+.maincontainer2{
+    flex-direction:column-reverse;
+    width: 100%;
+    height: 100vh;
+    margin: 15rem 0 0 5rem;
+}
+.heroimage{
+    width: 90%;
+    height: 100vh;
+    margin-top: 5rem;
+    /* border: yellow 2px solid; */
+
+
+}
+.heroimage img{
+
+    height: 100vh;
+    width: 90%;
+    border-radius: 15px;
+}
+footer{
+    /* background-color: rgb(95,87,154);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-left: 12rem;
+    height: 10vh; */
+    display: none;
+
+
+}
+.header-ui-margin{
+    margin-left: 5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+.padding-start{
+    padding-left: 8.5rem;
+}
+
+
+}
+/* media query ends  */
