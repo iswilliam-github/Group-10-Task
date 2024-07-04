@@ -484,6 +484,41 @@ footer{
 .padding-start{
     padding-left: 8.5rem;
 }
+.signupcontainer{
+    flex-direction: column;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 0;
+    height:70vh;
+    margin-top: 8rem;
+    padding-top: 8rem;
+}
+.signuptexttext {
+    width: 100%;
+    height: 90vh;
+    /* padding: 3rem; */
+
+    /* color: rgb(30,215,96); */
+    /* font-stretch: 100%; */
+    /* font-family: "Anton", sans-serif; */
+    /* font-weight: 400; */
+    /* font-style: normal; */
+
+
+
+}
+.signupimage{
+    /* background-color: whitesmoke; */
+    width: 80%;
+    height: 170vh;
+    padding: 2rem 1rem 2rem 1rem;
+
+}
+.signuptext{
+ 
+    margin: 40rem 0 0 0 ;
+}
 
 
 }
