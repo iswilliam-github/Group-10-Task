@@ -236,7 +236,7 @@ footer{
 }
 .signupimage{
     width: 45%;
-    /* height: 100vh; */
+    height: 55rem;
     padding: 3rem 1rem 2rem 1rem;
     border-radius: 50px 50px 0 0;
     border-width: 2px 5px 0 2px;
@@ -483,6 +483,14 @@ label{
 /* media query starts  */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media  screen and (max-width: 720px) {
+
+.middlenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .maincontainer2{
     flex-direction:column-reverse;
     width: 100%;
@@ -545,13 +553,16 @@ footer{
     font-style: normal;
 } */
 .signupimage{
-    width: 80%;
+    width: 90%;
     margin-top: 0;
+    height: 53rem;
+    padding: 03rem 0rem 0rem 0rem;
 }
 .btnsocialsign{
     padding: 0 0 0 0rem;
     font-weight: 400;
     font-size: 12px;
+    gap: 1rem;
 
 }
 .padding-start{
