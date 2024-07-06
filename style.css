@@ -39,9 +39,7 @@ height: 10vh;
 
 }
 
-main{
-  
-}
+
 
 .maincontainer{
     display: flex;
@@ -240,7 +238,7 @@ footer{
 }
 .signupimage{
     width: 45%;
-    height: 55rem;
+    height: 45rem;
     padding: 3rem 1rem 2rem 1rem;
     border-radius: 50px 50px 0 0;
     border-width: 2px 5px 0 2px;
@@ -515,23 +513,19 @@ label{
     width: 90%;
     border-radius: 15px;
 }
-footer{
-    /* background-color: rgb(95,87,154);
+/* footer{
+    background-color: rgb(95,87,154);
     color: white;
     display: flex;
     align-items: center;
     gap: 5rem;
     margin-left: 12rem;
     height: 10vh; */
-    /* display: none; */
+    /* display: none;
 
 
-}
-/* header{
-    height: 6vh;
-    /* padding: 8px; */
-    
-    } */
+} */
+
 .header-ui-margin{
     margin-left: 5rem;
     font-family: "Poppins", sans-serif;
@@ -540,17 +534,17 @@ footer{
 .padding-start{
     padding-left: 8.5rem;
 }
-.signupcontainer{
-    /* flex-direction: column; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* gap: 0;
+/* .signupcontainer{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
     height:70vh;
     margin-top: 8rem;
-    padding-top: 8rem; */
+    padding-top: 8rem;
 }
-/* .signuptexttext {
+.signuptexttext {
     width: 100%;
     height: 90vh;
     padding: 3rem;
@@ -566,6 +560,7 @@ footer{
     margin-top: 0;
     height: 53rem;
     padding: 03rem 0rem 0rem 0rem;
+    /* border: 5rem solid yellow; */
 }
 .btnsocialsign{
     padding: 0 0 0 0rem;
@@ -576,10 +571,6 @@ footer{
 }
 .padding-start{
     padding-left: 1rem;
-}
-.signuptext{
- 
-    /* margin: 40rem 0 0 0 ; */
 }
 .herotext{
     margin: 20px 50px 50px 100px;
