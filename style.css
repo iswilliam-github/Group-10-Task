@@ -175,6 +175,10 @@ footer{
 
 }
 
+.homefooter{
+    color: white;
+}
+
 /* sign up style starts */
 /* .signupcontainer{
     display: flex;
@@ -523,6 +527,11 @@ footer{
 
 
 }
+/* header{
+    height: 6vh;
+    /* padding: 8px; */
+    
+    } */
 .header-ui-margin{
     margin-left: 5rem;
     font-family: "Poppins", sans-serif;
@@ -562,7 +571,7 @@ footer{
     padding: 0 0 0 0rem;
     font-weight: 400;
     font-size: 12px;
-    gap: 1rem;
+    gap: 0rem;
 
 }
 .padding-start{
