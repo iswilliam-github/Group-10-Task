@@ -41,12 +41,12 @@
 
                     <div class="menu-items">
                         <div class="menu-icon"><img src="Assets/Images/Group10 (2)/Iconly/Regular/Bulk/Heart1group-1.png" alt=""></div>
-                        <div class="menu-name"><a href="">Favourite</a></div>
+                        <div class="menu-name"><a href="nowplaying.html">Favourite</a></div>
                     </div>
 
                     <div class="menu-items">
                         <div class="menu-icon"><img src="Assets/Images/Group10 (2)/Iconly/Curved/Bold/Bookmark1group.png" alt=""></div>
-                        <div class="menu-name"><a href="">Playlist</a></div>
+                        <div class="menu-name"><a href="nowplaying.html">Playlist</a></div>
                     </div>
 
                     <div class="menu-items">
@@ -56,7 +56,7 @@
 
                     <div class="menu-items">
                         <div class="menu-icon"><img src="Assets/Images/Group10 (2)/Iconly/Regular/Bulk/Ticket Star1group.png" alt=""></div>
-                        <div class="menu-name"><a href="">Thrillers</a></div>
+                        <div class="menu-name"><a href="thrillervid.html">Thrillers</a></div>
                     </div>
 
                     <div class="general">  <p>General</p> </div>
@@ -71,7 +71,7 @@
                         <div class="menu-namesub">Subscription</div><span><button class="new">NEW</button></span>
                     </div>
 
-                   <a href=""> <div class="menu-items">
+                   <a href="index.html"> <div class="menu-items">
                     <div class="menu-icon"><img src="Assets/Images/Group10 (2)/Iconly/Regular/Bulk/Logout1group.png" alt=""></div>
                     <div class="menu-name">Logout</div>
                 </div></a>
@@ -107,19 +107,23 @@
                         </div>
                        <div class="all-music-chart">
                             <div class="musicchart">
-                                <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_hgO1wFPXl3I.png" alt=""></div>
+                                <a href="nowplaying.html"><div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_hgO1wFPXl3I.png" alt=""></div>
+                                </a>
                                 <div class="musicchart-title">All Music Chart</div>
                                 <div class="musicchart-name">Top 50</div>
                             </div>
 
                             <div class="musicchart">
-                                <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_HPYk8X9hh34.png" alt=""></div>
+                                
+                                <a href="nowplaying.html"><div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_HPYk8X9hh34.png" alt=""></div>
+                                </a>                                
                                 <div class="musicchart-title">Pop</div>
                                 <div class="musicchart-name">Top 50</div>
                             </div>
 
                             <div class="musicchart">
-                                <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_Me5rtdNmIrU.png" alt=""></div>
+                                <a href="nowplaying.html"><div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_Me5rtdNmIrU.png" alt=""></div>
+                                </a> 
                                 <div class="musicchart-title">Hip Pop</div>
                                 <div class="musicchart-name">Top 50</div>
                             </div>
@@ -195,13 +199,17 @@
                             <div class="artist-name">M. Jackson</div>
                             <div class="song-position"></div>
                             <div class="control-icon">
-                                <img src="Assets/Images/Group10 (2)/Vector 1 (5).png" alt="">
-                                <img src="Assets/Images/Group10 (2)/Vector 1 (2).png" alt="">
-                                <img src="Assets/Images/Group10 (2)/Vector 1 (4).png" alt="">
-                                <img src="Assets/Images/Group10 (2)/Vector 1 (3).png" alt="">
-                                <img src="Assets/Images/Group10 (2)/Vector 1 (1).png" alt="">
+                                <button class="control-btn" id="prevBtn"><img src="Assets/Images/Group10 (2)/Vector 1 (5).png" alt=""></button>
+                                <button class="control-btn" id=""><img src="Assets/Images/Group10 (2)/Vector 1 (2).png" alt=""></button>
+                                <button class="control-btn" id="playBtn"><img src="Assets/Images/Group10 (2)/Vector 1 (4).png" alt=""></button>
+                                <button class="control-btn" id=""><img src="Assets/Images/Group10 (2)/Vector 1 (3).png" alt=""></button>
+                                <button class="control-btn" id="nextBtn"><img src="Assets/Images/Group10 (2)/Vector 1 (1).png" alt=""></button>
+                                <audio id="audioPlayer" src="Assets/Audio/03 Thou Oh Lord - Choir Brooklyn Tabernacle (UMADESB 2011 - Ozéias).mp3"></audio>  
+                                <audio id="audioPlayer" src="Assets/Audio/02 My Hope Is In Jesus.mp3"></audio>
+                                <audio id="audioPlayer" src="Assets/Audio/03 King of Glory.mp3"></audio>                                            
                             </div>
                            </div>
+                           
                            
 
                         </div>
@@ -235,12 +243,13 @@
                 </div>
                 <div class="f-social"> 
                     <div><img src="Assets/Images/Facebooksocial icon.png" alt=""></div>
-                    <div><img src="Assets/Images/Facebooksocial icon.png" alt=""></div>
-                    <div><img src="Assets/Images/Facebooksocial icon.png" alt=""></div>
+                    <div><img src="Assets/Images/Group10 (2)/twitter.png" alt=""></div>
+                    <div><img src="Assets/Images/Group10 (2)/instagram.png" alt=""></div>
                     
                 </div>
             </div>
         </div>
+        <script src="thrills.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     </body>
