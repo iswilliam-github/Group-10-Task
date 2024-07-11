@@ -63,6 +63,8 @@ body{
     font-weight: 500;
     font-size: 22px;
     box-shadow: 3px 3px 3px rgba(30, 215, 95, 0.37);
+    flex-wrap: wrap;
+    /* border: 5px solid yellow; */
     
 
 }
@@ -76,10 +78,34 @@ body{
     gap: 0.5rem;
 }
 .musicchart{
-    width: 150px;
-    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12rem;
+    height: 10rem;
+    /* width: 150px;
+    height: 170px; */
     border: 2px solid rgba(30, 215, 95, 0.61);
     border-radius: 20px;
+    cursor: url('Assets/Images/play.png'), auto;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+ 
+
+}
+.musicchart:hover{
+
+    transform: scale(1.2);
+    /* border: none; */
+    /* border: 2px solid rgba(30, 215, 95, 0.61); */
+
+
+}
+.musicchart a{
+   
+    cursor: url('Assets/Images/play.png') 16 16, auto;
+    
+
 }
 .musicchart-image img{
     width: 110px;
@@ -95,6 +121,7 @@ body{
     font-weight: 600;
     font-size: 15px; 
     margin: 0 0.9rem;
+    text-align: center;
 }
 .musicchart-name{
     color: rgb(133,132,132);
@@ -102,14 +129,23 @@ body{
     font-weight: 700;
     font-size: 15px; 
     margin: 0 0.9rem;
+    text-align: center;
 }
 
 .nowplaying-image{
-    width: 100%;
+    width: 40%;
     height: 45vh;
     background-color:  rgba(180, 171, 171, 0.623);
     border-radius: 25px;
+    /* cursor: url('Assets/Images/play.png'), auto; */
 
+}
+
+.nowplaying-image img{
+    width: 95%;
+    height: 25vh;
+    margin: 7px 0 0 7px;
+    border-radius: 40px;
 }
 .nowplaying-image2{
     width: 100%;
@@ -117,12 +153,6 @@ body{
     background-color:  rgba(180, 171, 171, 0.623);
     border-radius: 25px;
 
-}
-.nowplaying-image img{
-    width: 95%;
-    height: 25vh;
-    margin: 7px 0 0 7px;
-    border-radius: 40px;
 }
 .nowplaying-image2 img{
     width: 95%;
@@ -132,22 +162,47 @@ body{
 }
 .history-nowplaying{
     display: flex;
+    /* justify-content: space-between; */
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 
 .card-title-again{
     background-color:  rgba(180, 171, 171, 0.623);
+    border-radius: 2rem;
 
+}
+.main-house{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .history{
-    width: 100%;
-    height: 45vh;
+    display: flex;
+    width: 50%;
+    height: auto;
     background-color:  rgba(180, 171, 171, 0.623);
     border-radius: 25px;  
     padding: 2rem 2rem;
     border-radius: 20px;
+    flex-wrap: wrap;
+    /* border: 5px solid rgb(60, 20, 204); */
+
+}
+.left{
+    display: flex;
+    align-items: center;
+    /* border: 5px solid yellow; */
+    width: 50%;
+    height: auto;
+}
+.left-title{
+    display: flex;
+    flex-direction: column;
 }
 .his{
     color: rgb(30,215,96);
@@ -159,14 +214,18 @@ body{
 }
 .history-song{
     display: flex;
-    align-items: center;
-    height: 9vh;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 4rem;
     width: 100%;
     background-color: whitesmoke;
     border-radius: 15px;
-    margin: 1rem 0.5rem;
-    position: relative;
+    /* margin: 1rem 0.5rem; */
+    /* position: relative; */
     box-shadow: 5px 5px 5px grey;
+    flex-wrap: wrap;
+    /* border: 5px solid rgb(11, 184, 40); */
+
 
 
 }
@@ -175,30 +234,35 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 13px;   
+    /* margin: 0.5rem 0; */
 }
 .song-artist p{
     color: rgb(133,132,132);
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 10px; 
-    padding: -5px;
+    /* padding: 5px; */
+    margin:-1rem 0 ;
 }
 .review{
     display: flex;
-    width: 100%;
-    height: 12vh;
-    gap: 1.5rem;
-    position: absolute;
+    width: 50%;
+    height: auto;
+    /* border: 5px solid yellow; */
+    align-items: center;
+    justify-content: end;
+    gap: 0.5rem;
+    /* position: absolute; */
     /* left: 65%; */
-    bottom: 0rem;
-    left: 65%;
+    /* bottom: 0rem; */
+    /* left: 65%; */
     /* transform: translate(-50%, -50%); */
 }
 .comment,.like{
     border-radius: 50%;
     background-color: whitesmoke;
-    height: 40px;
-    width: 40px;
+    height: 2rem;
+    width: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,8 +273,8 @@ body{
     box-shadow: 5px 5px 5px grey;
     display: flex;
     align-items: center;
-    width: 80px;
-    height: 40px;
+    width: 4rem;
+    height: 2rem;
     border-radius: 40px;
     text-align: center;
     justify-content: center;
@@ -222,8 +286,8 @@ body{
     font-size: 11px;
 }
 .song-image img{
-    width: 60px;
-    height: 60px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 25%;
     padding: 0.5rem;
 }
@@ -306,6 +370,16 @@ body{
 .track-list{
     display: flex;
     border-radius: 25px;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.514);
+    height: auto;
+
+
+}
+.centered-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* .control-btn i { */
@@ -553,7 +627,7 @@ body{
     }
     body{
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
     .sidebar{
         width: 40%;
@@ -598,25 +672,152 @@ body{
     .history-nowplaying{
         flex-direction: column;
         width: 100%;
-        height: 70vh;
+        height: auto;
     }
     .history-song{
         flex-direction: column;
-        position: none;
+        /* position: none;
         left: 0;
-        bottom: 0;
+        bottom: 0; */
+        gap: 2rem;
         width: 100%;
-        height: 40vh;
+        height: auto;
     }
-    .review{
-
-        position: none;
-        left: 0;
-        bottom: 0;
-    }
+  
     .history{
         width: 100%;
-        height: 70vh;
+        height: auto;
 
     }
+    .profile{
+        flex-direction: column;
+    }
+
+
+
+    /* .history{
+        display: flex;
+        width: 50%;
+        height: auto;
+        background-color:  rgba(180, 171, 171, 0.623);
+        border-radius: 25px;  
+        padding: 2rem 2rem;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        border: 5px solid rgb(60, 20, 204);
+    
+    } */
+    .left{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    /* .left-title{
+        display: flex;
+        flex-direction: column;
+    } */
+    /* .his{
+        color: rgb(30,215,96);
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 13px; 
+    
+    
+    } */
+    .history-song{
+        /* display: flex; */
+        /* align-items: center; */
+        flex-direction: column;
+        /* justify-content: space-between; */
+        height: 9rem;
+        width: 100%;
+        /* background-color: whitesmoke; */
+        /* border-radius: 15px; */
+        /* margin: 1rem 0.5rem; */
+        /* position: relative; */
+        /* box-shadow: 5px 5px 5px grey; */
+        /* flex-wrap: wrap; */
+        /* border: 5px solid rgb(11, 184, 40); */
+    
+    
+    
+    }
+    /* .song-title p{
+        color: rgb(15, 15, 15);
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 13px;    */
+        /* margin: 0.5rem 0; */
+    /* } */
+    /* .song-artist p{
+        color: rgb(133,132,132);
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 10px;  */
+        /* padding: 5px; */
+        /* margin:-1rem 0 ; */
+    /* } */
+    .review{
+        /* display: flex; */
+        width: 50%;
+        height: auto;
+        /* border: 5px solid yellow; */
+        /* align-items: center; */
+        /* justify-content: end; */
+        /* gap: 0.5rem; */
+        /* position: absolute; */
+        /* left: 65%; */
+        /* bottom: 0rem; */
+        /* left: 65%; */
+        /* transform: translate(-50%, -50%); */
+    }
+    /* .comment,.like{
+        border-radius: 50%;
+        background-color: whitesmoke;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px grey;
+      
+    }
+    .rate{
+        box-shadow: 5px 5px 5px grey;
+        display: flex;
+        align-items: center;
+        width: 4rem;
+        height: 2rem;
+        border-radius: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+    .rate-value{
+        color: rgb(15, 15, 15); 
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 11px;
+    } */
+    .nowplaying-image2{
+        height: auto;
+        margin: 0 0 1rem 0;
+    
+    
+    }
+    .musicchart-image img{
+        width: 90%;
+        height: 12rem;
+        flex-wrap: wrap;
+        /* margin: 1rem 1rem; */
+        border-radius: 2rem;
+        padding: 1rem 1rem;
+    
+    }
+    .nowplaying-image2 img{
+        height: auto;
+     
+    }
+   
 }
+
+

@@ -108,13 +108,14 @@
                 
                 <!-- nav ends  -->
                 <div class="homebody">
-                     <!-- nav edit starts -->
-                     <nav class="navbar navbar-expand-lg  nav-background">
+                            <!-- collapse navs starts  -->
+                            <nav class="navbar navbar-expand-lg  nav-background">
                         <div class="container-fluid">
                             <!-- <a class="navbar-brand padding-start" href="#"><img src="Assets/Images/Logo2full logo.png" alt="Logo" style="max-height: 40px;"></a> -->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
+
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav header-ui-margin middlenav navedit">
 
@@ -151,7 +152,7 @@
                             </div>
                         </div>
                     </nav>
-                    <!-- nav edit ends  -->
+                    <!-- collapse nav edit ends  -->
                     <div class="homehead">
                         <div class="discover">
                             <div class="discovertext"><p>Playlist <span class="recent"> > All Music Chart</span></p></div>
@@ -164,13 +165,13 @@
 
                         </div>
                     </div>
-                    <div class="container mt-5">
+                    <div class="container mt-5 main-house">
                         <h1 class="text-center discover discovertext">All Music Chart</h1>
-                        <div class="row mt-4">
+                        <div class="row mt-4 ">
                             <div class="col-md-6">
-                                <div class="card">
+                                <div class="card card-title-again">
                                     <div class="card-body card-title-again now-playing">
-                                             <h5 class="card-title card-title-again">Top 50</h5>
+                                             <h5 class="card-title card-title-again"></h5>
 
                                         <div class="nowplaying-image2"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_YrtFlrLo2DQ.png" alt=""></div>
 
@@ -178,12 +179,16 @@
                                             <source id="audioSource" src="" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
-                                        <div class="mt-3">
-                                            <button class="control-btn-2nd" id="prevBtn" onclick="previousTrack()"><img src="Assets/Images/Group10 (2)/Vector 1 (5).png" alt=""></button>
-
-                                            <button class="control-btn-2nd" id="nextBtn" onclick="nextTrack()"> <img src="Assets/Images/Group10 (2)/Vector 1 (1).png" alt=""></button>
-
+                                        <div class="centered-button">
+                                            <!-- <div class="mt-3"> -->
+                                                <div class="pre">                                                <button class="control-btn-2nd" id="prevBtn" onclick="previousTrack()"><img src="Assets/Images/Group10 (2)/Vector 1 (5).png" alt=""></button>
+                                                </div>
+                                                 <div class="nex">                                                <button class="control-btn-2nd" id="nextBtn" onclick="nextTrack()"> <img src="Assets/Images/Group10 (2)/Vector 1 (1).png" alt=""></button>
+                                                 </div>
+    
+                                            <!-- </div> -->
                                         </div>
+                                       
                                     </div>
                                 </div>
                             
@@ -204,15 +209,12 @@
                                         <div class="musicchart-title">My hope</div>
                                         <div class="musicchart-name text-light">Bethel Music</div>
                                     </div></li>
-                                    <!-- <li onclick="playTrack(2)"><div class="musicchart">
+                                    <li onclick="playTrack(2)"><div class="musicchart">
                                         <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/music vid 1 12group.png" alt=""></div>
                                         <div class="musicchart-title">Gospel</div>
                                         <div class="musicchart-name text-light">Davido</div>
-                                    </div></li> -->
+                                    </div></li>
 
-                                    
-                                </ul>
-                                <ul class="track-list">
                                     <li onclick="playTrack(0)"> <div class="musicchart">
                                         <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_7YfMrHWBm0U.png" alt=""></div>
                                         <div class="musicchart-title">My soul sing</div>
@@ -223,16 +225,23 @@
                                         <div class="musicchart-title">My hope</div>
                                         <div class="musicchart-name text-light">Bethel Music</div>
                                     </div></li>
-                                    <!-- <li onclick="playTrack(2)"><div class="musicchart">
+                                    <li onclick="playTrack(2)"><div class="musicchart">
                                         <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/music vid 1 12group.png" alt=""></div>
                                         <div class="musicchart-title">Gospel</div>
                                         <div class="musicchart-name text-light">Davido</div>
-                                    </div></li> -->
+                                    </div></li>
 
-                                    
-                                </ul>
+                                    <!-- <li onclick="playTrack(1)"><div class="musicchart">
+                                        <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_fCEJGBzAkrU.png" alt=""></div>
+                                        <div class="musicchart-title">My hope</div>
+                                        <div class="musicchart-name text-light">Bethel Music</div>
+                                    </div></li>
+                                    <li onclick="playTrack(2)"><div class="musicchart">
+                                        <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/music vid 1 12group.png" alt=""></div>
+                                        <div class="musicchart-title">Gospel</div>
+                                        <div class="musicchart-name text-light">Davido</div>
+                                    </div></li>
 
-                                <ul class="track-list">
                                     <li onclick="playTrack(0)"> <div class="musicchart">
                                         <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_7YfMrHWBm0U.png" alt=""></div>
                                         <div class="musicchart-title">My soul sing</div>
@@ -243,7 +252,7 @@
                                         <div class="musicchart-title">My hope</div>
                                         <div class="musicchart-name text-light">Bethel Music</div>
                                     </div></li>
-                                    <!-- <li onclick="playTrack(2)"><div class="musicchart">
+                                    <li onclick="playTrack(2)"><div class="musicchart">
                                         <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/music vid 1 12group.png" alt=""></div>
                                         <div class="musicchart-title">Gospel</div>
                                         <div class="musicchart-name text-light">Davido</div>
@@ -251,6 +260,45 @@
 
                                     
                                 </ul>
+                                <!-- <ul class="track-list">
+                                    <li onclick="playTrack(0)"> <div class="musicchart">
+                                        <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_7YfMrHWBm0U.png" alt=""></div>
+                                        <div class="musicchart-title">My soul sing</div>
+                                        <div class="musicchart-name text-light">Chris Brown</div>
+                                    </div></li>
+                                    <li onclick="playTrack(1)"><div class="musicchart">
+                                        <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_fCEJGBzAkrU.png" alt=""></div>
+                                        <div class="musicchart-title">My hope</div>
+                                        <div class="musicchart-name text-light">Bethel Music</div>
+                                    </div></li>
+                                    <li onclick="playTrack(2)"><div class="musicchart">
+                                        <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/music vid 1 12group.png" alt=""></div>
+                                        <div class="musicchart-title">Gospel</div>
+                                        <div class="musicchart-name text-light">Davido</div>
+                                    </div></li>
+
+                                    
+                                </ul> -->
+
+                                <!-- <ul class="track-list">
+                                    <li onclick="playTrack(0)"> <div class="musicchart">
+                                        <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_7YfMrHWBm0U.png" alt=""></div>
+                                        <div class="musicchart-title">My soul sing</div>
+                                        <div class="musicchart-name text-light">Chris Brown</div>
+                                    </div></li>
+                                    <li onclick="playTrack(1)"><div class="musicchart">
+                                        <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_fCEJGBzAkrU.png" alt=""></div>
+                                        <div class="musicchart-title">My hope</div>
+                                        <div class="musicchart-name text-light">Bethel Music</div>
+                                    </div></li>
+                                    <li onclick="playTrack(2)"><div class="musicchart">
+                                        <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/music vid 1 12group.png" alt=""></div>
+                                        <div class="musicchart-title">Gospel</div>
+                                        <div class="musicchart-name text-light">Davido</div>
+                                    </div></li>
+
+                                    
+                                </ul> -->
                             </div>
                         </div>
                     </div>
