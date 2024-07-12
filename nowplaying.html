@@ -53,22 +53,22 @@
 
                     <div class="menu-items">
                         <div class="menu-icon"><img src="Assets/Images/Group10 (2)/Search1group.png" alt=""></div>
-                        <div class="menu-name"><a href="homepage.html">Search</a></div>
+                        <div class="menu-name"><a href="#">Search</a></div>
                     </div>
 
                     <div class="menu-items">
                         <div class="menu-icon"><img src="Assets/Images/Group10 (2)/Iconly/Regular/Bulk/Heart1group-1.png" alt=""></div>
-                        <div class="menu-name"><a href="">Favourite</a></div>
+                        <div class="menu-name"><a href="#">Favourite</a></div>
                     </div>
 
-                    <div class="menu-items">
+                    <div class="menu-items active">
                         <div class="menu-icon"><img src="Assets/Images/Group10 (2)/Iconly/Curved/Bold/Bookmark1group.png" alt=""></div>
                         <div class="menu-name"><a href="nowplaying.html">Playlist</a></div>
                     </div>
 
                     <div class="menu-items">
                         <div class="menu-icon"><img src="Assets/Images/Group10 (2)/Iconly/Regular/Bulk/Document1group.png" alt=""></div>
-                        <div class="menu-name"><a href="nowplaying.html">Album</a></div>
+                        <div class="menu-name"><a href="#">Album</a></div>
                     </div>
 
                     <div class="menu-items">
@@ -397,6 +397,21 @@
                 </div>
             </div>
         </div>
+                <!-- active script  starts-->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const navItems = document.querySelectorAll('.menu-items');
+    
+          navItems.forEach(item => {
+            item.addEventListener('click', function() {
+              navItems.forEach(nav => nav.classList.remove('active'));
+              this.classList.add('active');
+            });
+          });
+        });
+      </script>
+
+            <!-- active script  ends-->
         <script>
             let currentTrack = 0;
             const tracks = [
