@@ -61,7 +61,7 @@ body{
     color: rgb(30,215,96);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 0.5rem;
     box-shadow: 3px 3px 3px rgba(30, 215, 95, 0.37);
     flex-wrap: wrap;
     /* border: 5px solid yellow; */
@@ -80,10 +80,9 @@ body{
 .musicchart{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     width: 10rem;
-    height: 9rem;
-
+    height: 10rem;
     border: 1px solid rgba(30, 215, 95, 0.61);
     border-radius: 20px;
     cursor: url('Assets/Images/play.png'), auto;
@@ -118,17 +117,19 @@ body{
     color: rgb(30,215,96);
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 15px; 
-    /* margin: 0 0.9rem; */
-    text-align: left;
+    font-size: 0.7rem; 
+    margin: 0 0.9rem;
+    padding: 0.5rem 0 0 0.5rem;
+
 }
 .musicchart-name{
     color: rgb(133,132,132);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 15px; 
-    /* margin: 0 0.9rem; */
-    text-align: left;
+    font-size: 0.7rem; 
+    margin: 0 0.9rem;
+    padding: 0 0 0 0.5rem;
+
 }
 
 .nowplaying-image{
@@ -394,13 +395,14 @@ body{
 
 .sidebar{
     background-color: rgb(69,62,102);
-    width: 18%;
+    width: 15%;
     border-radius: 5px;
+    padding: 2rem;
     /* display: flex; */
 }
 .icon-name{
     display: flex;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .sideicon img{
     width: 55px;
@@ -422,19 +424,19 @@ body{
     color: rgb(255,255,255);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     width: 100px;
-    margin: 2rem ;
+    margin: 2rem 0 0 0.5rem ;
 }
 .general{
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     width: 100px;
-    margin: 2rem ;
+    margin: 2rem 0 0 0.5rem ;
 }
 .menu-items{
     display: flex;
@@ -695,7 +697,8 @@ body{
 
     }
     .profile{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        /* align-items: baseline; */
     }
     .left{
         flex-direction: column;
