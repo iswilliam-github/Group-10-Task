@@ -946,6 +946,9 @@ body{
   .scroll-button.right {
     right: 0;
   }
+    .thrillbody{
+        width: 100%;
+    }
 
 }
 
