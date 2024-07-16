@@ -360,24 +360,25 @@
             <!-- active script  ends-->
         <script src="thrills.js"></script>
 
-        <!-- HORIZONTAL  SCROLL STARTS  -->
-        <script>
-            function scrollLeft() {
-              document.querySelector('.all-music-chart').scrollBy({
-                left: -200,
-                behavior: 'smooth'
-              });
-            }
-        
-            function scrollRight() {
-              document.querySelector('.all-music-chart').scrollBy({
-                left: 200,
-                behavior: 'smooth'
-              });
-            }
-          </script>
+                <!-- HORIZONTAL  SCROLL STARTS  -->
+                <script>
+    
 
-        <!-- HORIZONTAL SCROLL ENDS  -->
+
+                    const scrollContainer = document.querySelector('.all-music-chart');
+        
+        function scrollLeft() {
+            scrollContainer.scrollLeft -= 220; // Adjust value based on card width
+        }
+        
+        function scrollRight() {
+            scrollContainer.scrollLeft += 220; // Adjust value based on card width
+        }
+                  </script>
+        
+                  
+        
+                <!-- HORIZONTAL SCROLL ENDS  -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {
               const navItems = document.querySelectorAll('.nav-item');

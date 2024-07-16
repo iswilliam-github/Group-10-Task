@@ -648,14 +648,21 @@ body{
         flex-direction: column;
     }
     .all-music-chart{
-        flex-direction: column;
         gap: 0.5rem;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .all-music-chart::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
     }
     .musicchart{
         width: 100%;
         height: auto;
         border: 1px solid rgba(30, 215, 95, 0.61);
         border-radius: 20px;
+        min-width: 200px;
     }
     body{
         width: 100%;
