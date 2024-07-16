@@ -18,23 +18,23 @@
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> 
          <!-- fonts ends  -->
-
          <style>
-            .track-list {
+            /* .track-list {
                 list-style-type: none;
                 padding: 0;
-            }
+                display: flex;
+                flex-wrap: wrap;
+            } */
             .track-list li {
                 padding: 10px;
                 cursor: pointer;
+      
             }
-            .track-list li:hover {
-                background-color: rgba(180, 171, 171, 0.623);
-                border-radius: 25px;
-            }
-
-            
+            /* .track-list li:hover {
+                background-color: #f8f9fa;
+            } */
         </style>
+
     </head>
     <body>
         <div class="homecontainer">
@@ -176,16 +176,36 @@
                                         <div class="nowplaying-image2"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_YrtFlrLo2DQ.png" alt=""></div>
 
                                         <audio id="audioPlayer" controls class="w-100">
-                                            <source id="audioSource" src="" type="audio/mpeg">
+                                            <source id="audioSource" src="Assets/Audio/01 - My Soul Will Sings - In Jesus' Name.mp3" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
                                         <div class="centered-button">
-                                                <div class="pre">                                                <button class="control-btn-2nd" id="prevBtn" onclick="previousTrack()"><img src="Assets/Images/Group10 (2)/Vector 1 (5).png" alt=""></button>
-                                                </div>
-                                                 <div class="nex">                                                <button class="control-btn-2nd" id="nextBtn" onclick="nextTrack()"> <img src="Assets/Images/Group10 (2)/Vector 1 (1).png" alt=""></button>
-                                                 </div>
-    
-                                        </div>
+                                            <div class="pre">
+                                              <button class="control-btn-2nd" id="prevBtn" onclick="previousTrack()">
+                                                <img src="Assets/Images/Group10 (2)/Vector 1 (5).png" alt="Previous">
+                                              </button>
+                                            </div>
+                                            <div class="nex">
+                                              <button class="control-btn-2nd" id="rewindBtn" onclick="rewindTrack()">
+                                                <img src="Assets/Images/Group10 (2)/Vector 1 (2).png" alt="Rewind">
+                                              </button>
+                                            </div>
+                                            <div class="nex">
+                                              <button class="control-btn-2nd" id="playBtn" onclick="togglePlay()">
+                                                <img src="Assets/Images/Group10 (2)/Vector 1 (4).png" alt="Play" id="playImg">
+                                              </button>
+                                            </div>
+                                            <div class="nex">
+                                              <button class="control-btn-2nd" id="forwardBtn" onclick="forwardTrack()">
+                                                <img src="Assets/Images/Group10 (2)/Vector 1 (3).png" alt="Forward">
+                                              </button>
+                                            </div>
+                                            <div class="nex">
+                                              <button class="control-btn-2nd" id="nextBtn" onclick="nextTrack()">
+                                                <img src="Assets/Images/Group10 (2)/Vector 1 (1).png" alt="Next">
+                                              </button>
+                                            </div>
+                                          </div>
                                        
                                     </div>
                                 </div>
@@ -193,23 +213,29 @@
                             </div>
 
                            
+                            <audio id="audio" src="Assets/Audio/01 - My Soul Will Sings - In Jesus' Name.mp3"></audio>
+                            <audio id="audio" src="Assets/Audio/02 My Hope Is In Jesus.mp3"></audio>
+                            <audio id="audio" src="Assets/Audio/03 King of Glory.mp3"></audio>
+                            <audio id="audio" src="Assets/Audio/03 Thou Oh Lord - Choir Brooklyn Tabernacle (UMADESB 2011 - Ozéias).mp3"></audio>
+
+
 
                             <div class=" col-md-6">
                                 <ul class="track-list">
-                                    <li onclick="playTrack(0)"> <div class="musicchart">
+                                    <li onclick="playTrack(0)" > <div class="musicchart">
                                         <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_7YfMrHWBm0U.png" alt=""></div>
                                         <div class="musicchart-title">My soul sing</div>
                                         <div class="musicchart-name text-light">Chris Brown</div>
                                     </div></li>
-                                    <li onclick="playTrack(1)"><div class="musicchart">
+                                    <li onclick="playTrack(1)" ><div class="musicchart">
                                         <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_fCEJGBzAkrU.png" alt=""></div>
                                         <div class="musicchart-title">My hope</div>
                                         <div class="musicchart-name text-light">Bethel Music</div>
                                     </div></li>
-                                    <li onclick="playTrack(2)"><div class="musicchart">
+                                    <li onclick="playTrack(2)" ><div class="musicchart">
                                         <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/music vid 1 12group.png" alt=""></div>
                                         <div class="musicchart-title">Gospel</div>
-                                        <div class="musicchart-name text-light">Davido</div>
+                                        <div class="musicchart-name text-light">Planetshaker</div>
                                     </div></li>
 
                                     <li onclick="playTrack(0)"> <div class="musicchart">
@@ -225,7 +251,7 @@
                                     <li onclick="playTrack(2)"><div class="musicchart">
                                         <div class="musicchart-image"><img src="Assets/Images/Group10 (2)/music vid 1 12group.png" alt=""></div>
                                         <div class="musicchart-title">Gospel</div>
-                                        <div class="musicchart-name text-light">Davido</div>
+                                        <div class="musicchart-name text-light">Planetshaker</div>
                                     </div></li>
 
                                     <!-- <li onclick="playTrack(1)"><div class="musicchart">
@@ -412,7 +438,28 @@
       </script>
 
             <!-- active script  ends-->
-        <script>
+
+                            <!-- HORIZONTAL  SCROLL STARTS  -->
+                            <script>
+    
+
+
+                                const scrollContainer = document.querySelector('.track-list');
+                    
+                    function scrollLeft() {
+                        scrollContainer.scrollLeft -= 220; // Adjust value based on card width
+                    }
+                    
+                    function scrollRight() {
+                        scrollContainer.scrollLeft += 220; // Adjust value based on card width
+                    }
+                              </script>
+                    
+                              
+                    
+                            <!-- HORIZONTAL SCROLL ENDS  -->
+       <!-- 1st audio player  -->
+       <!-- <script>
             let currentTrack = 0;
             const tracks = [
                 "Assets/Audio/01 - My Soul Will Sings - In Jesus' Name.mp3", 
@@ -442,8 +489,58 @@
                 currentTrack = trackIndex;
                 loadTrack(trackIndex);
             }
-        </script>
-        <script src="thrills.js"></script>
+        </script> -->
+        <!-- 1st audio player ends  -->
+        <script>
+            const audio = document.getElementById('audioPlayer');
+            const playImg = document.getElementById('playImg');
+            const tracks = [
+              "Assets/Audio/01 - My Soul Will Sings - In Jesus' Name.mp3",
+              "Assets/Audio/02 My Hope Is In Jesus.mp3",
+              "Assets/Audio/03 King of Glory.mp3",
+              "Assets/Audio/03 Thou Oh Lord - Choir Brooklyn Tabernacle (UMADESB 2011 - Ozéias).mp3"
+            ];
+            let currentTrack = 0;
+        
+            function togglePlay() {
+              if (audio.paused) {
+                audio.play();
+                playImg.src = 'Assets/Images/Group10 (2)/'; // Change to the "stop" icon
+              } else {
+                audio.pause();
+                playImg.src = 'Assets/Images/Group10 (2)/Vector 1 (4).png'; // Change to the "play" icon
+              }
+            }
+        
+            function previousTrack() {
+              currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
+              playTrack(currentTrack);
+            }
+        
+            function rewindTrack() {
+              audio.currentTime -= 10; // Rewind 10 seconds
+            }
+        
+            function forwardTrack() {
+              audio.currentTime += 10; // Forward 10 seconds
+            }
+        
+            function nextTrack() {
+              currentTrack = (currentTrack + 1) % tracks.length;
+              playTrack(currentTrack);
+            }
+        
+            function playTrack(index) {
+              currentTrack = index;
+              audio.src = tracks[currentTrack];
+              audio.play();
+              playImg.src = 'Assets/Images/Group10 (2)/'; // Change to the "stop" icon
+            }
+        
+            // Ensure the first track is loaded initially
+            playTrack(currentTrack);
+          </script>
+        <!-- <script src="thrills.js"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     </body>

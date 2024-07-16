@@ -423,6 +423,7 @@ body{
 }
 
 .track-list{
+    list-style-type: none;
     display: flex;
     border-radius: 25px;
     flex-wrap: wrap;
@@ -663,6 +664,28 @@ body{
         border: 1px solid rgba(30, 215, 95, 0.61);
         border-radius: 20px;
         min-width: 200px;
+    }
+
+    /* .track-list li{
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+        border: 2px red solid;
+    } */
+
+    .track-list{
+        /* flex-wrap: nowrap; */
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;  
+        scrollbar-width: none;
+    
+    
+    }
+    .track-list::-webkit-scrollbar {
+        display: none;  
     }
     body{
         width: 100%;
