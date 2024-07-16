@@ -954,6 +954,7 @@ body{
   }
   .scroll-button.right {
     right: 0;
+<<<<<<< HEAD
   } */
 
   .recommended-video-container::-webkit-scrollbar {
@@ -973,6 +974,12 @@ body{
 
 
 }
+=======
+  }
+    .thrillbody{
+        width: 100%;
+    }
+>>>>>>> 8c8d560f87fe01b11881e18713effe926af1f220
 
 }
 
