@@ -751,7 +751,7 @@ body{
 
     }
     .profile{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .left{
         flex-direction: column;
