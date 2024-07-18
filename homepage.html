@@ -285,28 +285,55 @@
                            
                         </div>
 
-                        <!-- <div class="now-playing">
-                            <div class="nowplaying-image"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_YrtFlrLo2DQ.png" alt=""></div>
-                           
-                           <div class="now-playing-mix">
-                            <div class="song">Heal the world</div>
-                            <div class="artist-name">M. Jackson</div>
-                            <div class="song-position"></div>
-                            <div class="control-icon">
-                                <button class="control-btn" id="prevBtn"><img src="Assets/Images/Group10 (2)/Vector 1 (5).png" alt=""></button>
-                                <button class="control-btn" id=""><img src="Assets/Images/Group10 (2)/Vector 1 (2).png" alt=""></button>
-                                <button class="control-btn" id="playBtn"><img src="Assets/Images/Group10 (2)/Vector 1 (4).png" alt=""></button>
-                                <button class="control-btn" id=""><img src="Assets/Images/Group10 (2)/Vector 1 (3).png" alt=""></button>
-                                <button class="control-btn" id="nextBtn"><img src="Assets/Images/Group10 (2)/Vector 1 (1).png" alt=""></button>
-                                <audio id="audioPlayer" src="Assets/Audio/03 Thou Oh Lord - Choir Brooklyn Tabernacle (UMADESB 2011 - Ozéias).mp3"></audio>  
-                                <audio id="audioPlayer" src="Assets/Audio/02 My Hope Is In Jesus.mp3"></audio>
-                                <audio id="audioPlayer" src="Assets/Audio/03 King of Glory.mp3"></audio>                                            
+                        
+
+                        <div class="col-md-6">
+                            <div class="card card-title-again">
+                                <div class="card-body card-title-again now-playing">
+                                         <h5 class="card-title card-title-again"></h5>
+
+                                    <div class="nowplaying-image2"><img src="Assets/Images/Group10 (2)/19f2cfa5-f71a-4e04-b6c1-b7ab312de384/unsplash_YrtFlrLo2DQ.png" alt=""></div>
+
+                                    <audio id="audioPlayer" controls class="w-100">
+                                        <source id="audioSource" src="Assets/Audio/01 - My Soul Will Sings - In Jesus' Name.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <div class="centered-button">
+                                        <div class="pre">
+                                          <button class="control-btn-2nd" id="prevBtn" onclick="previousTrack()">
+                                            <img src="Assets/Images/Group10 (2)/Vector 1 (5).png" alt="Previous">
+                                          </button>
+                                        </div>
+                                        <div class="nex">
+                                          <button class="control-btn-2nd" id="rewindBtn" onclick="rewindTrack()">
+                                            <img src="Assets/Images/Group10 (2)/Vector 1 (2).png" alt="Rewind">
+                                          </button>
+                                        </div>
+                                        <div class="nex">
+                                          <button class="control-btn-2nd" id="playBtn" onclick="togglePlay()">
+                                            <img src="Assets/Images/Group10 (2)/Vector 1 (4).png" alt="Play" id="playImg">
+                                          </button>
+                                        </div>
+                                        <div class="nex">
+                                          <button class="control-btn-2nd" id="forwardBtn" onclick="forwardTrack()">
+                                            <img src="Assets/Images/Group10 (2)/Vector 1 (3).png" alt="Forward">
+                                          </button>
+                                        </div>
+                                        <div class="nex">
+                                          <button class="control-btn-2nd" id="nextBtn" onclick="nextTrack()">
+                                            <img src="Assets/Images/Group10 (2)/Vector 1 (1).png" alt="Next">
+                                          </button>
+                                        </div>
+                                      </div>
+                                   
+                                </div>
                             </div>
-                           </div>
+                        
+                        </div>
                            
                            
 
-                        </div> -->
+                        </div>
                     </div>
                    
                 </div>
@@ -392,6 +419,54 @@
             });
           </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+        <script>
+            const audio = document.getElementById('audioPlayer');
+            const playImg = document.getElementById('playImg');
+            const tracks = [
+              "Assets/Audio/01 - My Soul Will Sings - In Jesus' Name.mp3",
+              "Assets/Audio/02 My Hope Is In Jesus.mp3",
+              "Assets/Audio/03 King of Glory.mp3",
+              "Assets/Audio/03 Thou Oh Lord - Choir Brooklyn Tabernacle (UMADESB 2011 - Ozéias).mp3"
+            ];
+            let currentTrack = 0;
+        
+            function togglePlay() {
+              if (audio.paused) {
+                audio.play();
+                playImg.src = 'Assets/Images/Group10 (2)/pause.png'; // Change to the "stop" icon
+              } else {
+                audio.pause();
+                playImg.src = 'Assets/Images/Group10 (2)/Vector 1 (4).png'; // Change to the "play" icon
+              }
+            }
+        
+            function previousTrack() {
+              currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
+              playTrack(currentTrack);
+            }
+        
+            function rewindTrack() {
+              audio.currentTime -= 10; // Rewind 10 seconds
+            }
+        
+            function forwardTrack() {
+              audio.currentTime += 10; // Forward 10 seconds
+            }
+        
+            function nextTrack() {
+              currentTrack = (currentTrack + 1) % tracks.length;
+              playTrack(currentTrack);
+            }
+        
+            function playTrack(index) {
+              currentTrack = index;
+              audio.src = tracks[currentTrack];
+              audio.play();
+              playImg.src = 'Assets/Images/Group10 (2)/pause.png'; // Change to the "stop" icon
+            }
+        
+            // Ensure the first track is loaded initially
+            playTrack(currentTrack);
+          </script>
     </body>
 </html>

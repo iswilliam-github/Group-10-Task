@@ -203,7 +203,7 @@ body{
     display: flex;
     /* justify-content: space-between; */
     gap: 1.5rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 
@@ -219,6 +219,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 
 .history{
     display: flex;
